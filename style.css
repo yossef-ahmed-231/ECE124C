@@ -1,0 +1,243 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix{
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.parent{
+  width: 1180px;
+  margin:0 auto;
+}
+
+
+.firstnav{
+  background-color: white;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.head{
+  position: relative;
+}
+.head .firstnav .parent .logo{
+  text-align: center;
+
+}
+.head .firstnav .parent .links{
+  text-align: center;
+}
+.head .firstnav .parent h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #0653b6;
+}
+.head .firstnav .parent .links li{
+  display: inline-block;
+  margin-left:30px;
+  font-style:bolder;
+
+
+}
+.head .firstnav .parent .links li a{
+  text-decoration: none;
+  color:black;
+  font-weight: 100px;
+}
+.head .firstnav .parent .links li a:hover{
+border-bottom: 5px solid black;
+color: #0653b6;
+}
+.head .headcontent{
+  width: 1180px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+  height: auto;
+}
+.head .headcontent h1{
+  word-spacing: 10px;
+  font-size: 150%;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+.head .headcontent .w{
+  color: #404040;
+
+}
+
+.head .firstnav .parent .links .curr{
+  border-bottom: 5px solid #0653b6;
+}
+.head .firstnav .parent .links .R{
+  font-size: 15px;
+  font-style: italic ;
+  font-weight: bold;
+}
+
+
+.bod video{
+  width: 100%;
+  height: auto;
+}
+
+
+/*end head*/
+/*body*/
+.divarea{
+  width: 100%;
+  margin:5px 0 5px 0;
+}
+.divarea .main img{
+  width: 100%;
+  height: 400px;
+}
+.divarea h1{
+  text-align: center;
+  color:#262626;
+}
+.divarea .image{
+  width: 50%;
+ height: 100%;
+ float: left;
+ margin-top: 0;
+}
+.divarea .image img{
+width: 100%;
+height: auto;
+}
+.divarea img:hover{
+  width:101%
+}
+.see{
+  text-align: center;
+  font-size: 30px;
+
+  font-weight: bold;
+  background: rgb(101,101,103);
+  background: linear-gradient(90deg, rgba(101,101,103,1) 8%, rgba(189,189,196,1) 30%, rgba(238,238,238,1) 65%, rgba(255,255,254,1) 100%, rgba(98,97,94,1) 100%, rgba(130,153,158,1) 100%);
+  height: 50px;
+}
+.see p
+{
+ padding: 5px;
+}
+.see a{
+  text-decoration: none;
+
+}
+.see a button{
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor:pointer;
+  color: #0653b6;
+}
+.see p :hover{
+    color: black;
+    font-size: 25px;
+}
+/*end body*/
+/*footer*/
+.foot{
+ margin-top: 5px;
+ border-top: 1px solid #F2F2F2;
+ text-align: center;
+}
+.foot .col{
+  float: left;
+  display: inline-block;
+  width: 33%;
+}
+.foot .col p{
+  width: 100%;
+  text-align: center;
+  color: #0653b6;
+  margin:3px;
+}
+.foot .copyrghits{
+  margin:20px;
+}
+
+.foot a{
+  text-decoration: none;
+  color: #0653b6;
+}
+/*end footer*/
+/*////////////////////////////////////////////////////////////*/
+@media only screen and (max-width:1180px) {
+  .head .headcontent{
+    width:100%;
+    padding:0 10px;
+    }
+   .parent{
+      width: 100%
+    }
+    .head .firstnav .parent .links li{
+      margin-left:4px;
+    }
+}
+@media only screen and (max-width:580px) {
+  .head .headcontent h1{
+   font-size: 10px;
+   padding: 0 auto;
+  }
+  .divarea h1{
+    font-size: 20px;
+  }
+}
+  @media only screen and (max-width:350px) {
+   .head .firstnav .parent h2{
+     font-size: 15px;
+   }
+     .head .firstnav .parent .links li{
+       font-size: 10px;
+    }
+
+ .see p{
+   font-size: 15px;
+    margin: 0 auto;
+    padding: 15px;;
+  }
+  .see p button{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:500px) {
+ .foot{
+   height: 350px;
+ }
+ .foot .parent{
+   width:30%;
+ }
+ .foot .col{
+   float: none;
+   display: block;
+   font-size: 10px;
+   width: 100%;
+ }
+ .foot h1{
+  width: 100%;
+  font-size: 15px;
+ }
+ .foot .parent .col p{
+   width: 100%;
+   text-align: center;
+ }
+}
+ @media only screen and (max-width:480px) {
+   .foot h1{
+    font-size: 10px;
+   }
+
+}
